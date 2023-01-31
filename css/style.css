@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: sans-serif;
+}
+
+.wrapper .wrapper-item5 .right5, .wrapper .wrapper-item5 .left5, .wrapper .wrapper-item4 .right4, .wrapper .wrapper-item4 .left4, .wrapper .wrapper-item3 .right3 {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.wrapper .wrapper-item5, .wrapper .wrapper-item4, .wrapper .wrapper-item3, .wrapper .wrapper-item2, .wrapper .wrapper-item1 .right1, .wrapper .wrapper-item1 .left1 {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.wrapper {
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  flex-direction: column;
+}
+.wrapper .wrapper-item1 {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper .wrapper-item1 .left1 {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: green;
+  color: #fff;
+  box-shadow: 1px 2px 2.5px greenyellow;
+}
+.wrapper .wrapper-item1 .right1 {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: green;
+  color: #fff;
+  box-shadow: 2px 4px 5px greenyellow;
+}
+.wrapper .wrapper-item2 {
+  gap: 50px;
+  border-radius: none;
+  background-color: transparent;
+  color: #999;
+}
+.wrapper .wrapper-item3 .left3 {
+  border-radius: none;
+  background-color: transparent;
+  color: green;
+}
+.wrapper .wrapper-item3 .right3 {
+  border-radius: 2px;
+  background-color: green;
+  color: #fff;
+}
+.wrapper .wrapper-item4 .left4 {
+  border-radius: 5px;
+  background-color: rgb(215, 210, 210);
+  color: green;
+}
+.wrapper .wrapper-item4 .right4 {
+  border-radius: 5px;
+  background-color: green;
+  color: rgb(215, 210, 210);
+}
+.wrapper .wrapper-item5 .left5 {
+  border-radius: 5px;
+  background-color: transparent;
+  color: #999;
+}
+.wrapper .wrapper-item5 .right5 {
+  border-radius: 5px;
+  background-color: #999;
+  color: black;
+}/*# sourceMappingURL=style.css.map */

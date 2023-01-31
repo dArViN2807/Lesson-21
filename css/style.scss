@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: sans-serif;
+}
+@mixin input($bg-color, $color, $br-radius) {
+  border-radius: $br-radius;
+  background-color: $bg-color;
+  color: $color;
+}
+%padding {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+%input-sizes {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.wrapper {
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  flex-direction: column;
+  .wrapper-item1 {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    .left1 {
+      @extend %input-sizes;
+      height: 50px;
+      width: 50px;
+      @include input(green, #fff, 50%);
+      box-shadow: (1px 2px 2.5px greenyellow);
+    }
+    .right1 {
+      @extend %input-sizes;
+      height: 50px;
+      width: 50px;
+      @include input(green, #fff, 50%);
+      box-shadow: (2px 4px 5px greenyellow);
+    }
+    .left2 {
+    }
+  }
+  .wrapper-item2 {
+    @extend %input-sizes;
+    gap: 50px;
+    @include input(transparent, #999, none);
+  }
+  .wrapper-item3 {
+    @extend %input-sizes;
+    .left3 {
+      @include input(transparent, green, none);
+    }
+    .right3 {
+      @include input(green, #fff, 2px);
+      @extend %padding;
+    }
+  }
+  .wrapper-item4 {
+    @extend %input-sizes;
+    .left4 {
+      @extend %padding;
+      @include input(rgb(215, 210, 210), green, 5px);
+    }
+    .right4 {
+      @extend %padding;
+      @include input(green, rgb(215, 210, 210), 5px);
+    }
+  }
+  .wrapper-item5 {
+    @extend %input-sizes;
+    .left5 {
+      @extend %padding;
+      @include input(transparent, #999, 5px);
+    }
+    .right5 {
+      @extend %padding;
+      @include input(#999, black, 5px);
+    }
+  }
+}
